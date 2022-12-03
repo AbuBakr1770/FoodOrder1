@@ -1,0 +1,12 @@
+<!-- <ul>
+  <li *ngFor="let cartItem of cart.items">
+
+    <img  [src]="cartItem.food.imageURL" [alt]='cartItem.food.name'>
+
+  </li>
+</ul> -->
+
+<div *ngFor="let item of cart.items">
+  <img src="{{item.food.imageURL}}" alt="{{item.food.name}}">
+
+</div>

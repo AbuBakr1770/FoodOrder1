@@ -1,0 +1,10 @@
+.container > *{
+  max-width: 40rem;
+  min-width: 25rem;
+}
+
+img{
+  border-radius: 3rem;
+  object-fit: cover;
+  margin: 1rem;
+}

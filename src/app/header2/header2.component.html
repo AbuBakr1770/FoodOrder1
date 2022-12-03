@@ -1,0 +1,18 @@
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand" routerLink="">Food</a>
+  <a class="btnh navbar-brand "  routerLink="">Home</a>
+  <div class="d-flex ms-auto">
+    <input
+      class="form-control mr-sm-2 me-1"
+      placeholder="Search"
+      [(ngModel)]="Item"
+    />
+    <button class="btn btn-outline-success my-2 my-sm-0" (click)="search()">
+      Search
+    </button>
+  </div>
+</nav>
+<div class="ff d-flex justify-content-center align-items-center">
+
+  <app-tags></app-tags>
+</div>

@@ -1,0 +1,24 @@
+<div
+  class="container d-flex justify-content-center align-items-center flex-wrap"
+>
+  <img
+    src="{{ food.imageURL }}"
+    alt="{{ food.name }}"
+    style="width: 20rem; height: auto"
+  />
+  <div class="Details">
+    <h3>{{ food.name }}</h3>
+    <h3 class="text-primary">⏲Cook-Time: {{ food.cookTime }} minutes</h3>
+    <h3 class="text-dark">Price:{{ food.price }}$</h3>
+
+    <app-tags [foodPageTag]="food.tags"></app-tags>
+    <button
+      class="btn btn-outline-primary"
+      style="width: 100%"
+      (click)="addtocart()"
+    >
+      Add to cart
+    </button>
+  </div>
+  <div class="text-primary"></div>
+</div>
